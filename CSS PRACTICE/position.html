@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .posi-static{
+            position: static;
+            top: 10px;
+            left: 50px;
+        }
+        .posi-relative{
+            position: relative;
+            top: 10px;
+            left: 50px;
+            /* padding: 10px;
+            margin: 20px; */
+        }
+        .posi-absolute{
+            position: absolute;
+            top: 10px;
+        }
+        .posi-fixed{
+            position: fixed;
+            bottom: 20px;
+        }
+        .posi-stc-parent{
+            background-color:brown ;
+            height: 500px;
+        }
+        .posi-sticky{
+            top: 20px;
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>position: static;</li>
+        <li>position: relative;</li>
+        <li>position: absolute;</li>
+        <li>position: fixed;</li>
+        <li>position: sticky;</li>
+    </ul>
+    <hr>
+    <h2>Postion Static</h2>
+    <hr>
+    <div>
+
+        <label for="">Before Static relative</label>
+        <input class="posi-static" type="text" name="" id="">
+        <label for="">After Static relative</label>
+    </div>
+    <hr>
+    <h2>Postion Relative</h2>
+    <hr>
+    <div>
+        <label for="">Before Postion relative</label>
+        <input type="text" class="posi-relative" name="" id="">
+        <label for="">After Postion relative will enabled TOP-Right-Bottom-Left containt will move without impacting other content </label>
+    </div>
+    <hr>
+    <h2>Postion Absolute</h2>
+    <hr>
+    <div class="posi-stc-parent">
+        <label for="">Before Postion sticky</label>
+        <div class="posi-sticky">
+            <input type="text" placeholder="Position sticky Input"  name="" id="">
+        </div>
+        <label for="">After Postion sticky at one place</label>
+    </div>
+    <div>
+        <label for="">Before Postion Absolute</label>
+        <input type="text" placeholder="Position Absolute Input" class="posi-absolute" name="" id="">
+        <label for="">After Postion absolute will enabled TOP-Right-Bottom-Left and will be create other layer for moving according to screen</label>
+    </div>
+    <hr>
+    <h2>Postion Fixed</h2>
+    <hr>
+    <div>
+        <label for="">Before Postion fix</label>
+        <input type="text" placeholder="Position fixed Input" class="posi-fixed" name="" id="">
+        <label for="">After Postion fixed at one place</label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 500px
+        }
+
+        .background-attachment {
+            background-image: url(1.jpg);
+            background-attchment: fixed;
+            /* background-attachment: scroll; */
+        }
+
+        .background-clip {
+            background-image: url(1.jpg) ;
+            border: 25px dashed orangered;
+            /* background-clip:border-box ; */
+            background-clip: content-box ;
+        }
+
+        .background-origin {
+            border: 15px deshed orangered;
+            background-image: url(1.jpg);
+            background-origin: border-boox;
+            background-origin: content-box;
+        }
+
+        .background-color {
+            background-color: orange;
+        }
+
+        .background-image {
+            background-image: url(1.jpg) ;
+        }
+
+        .background-position {
+            border: 15px deshed orangered;
+            background-image: url(1.jpg);
+            background-position: 20%;
+        }
+
+        .background-repeat {
+            border: 15px dashed orangered;
+            background-image: url(1.jpg);
+            background-repeat: no-repeat;
+        }
+
+        .background-size {
+            border: 15px dashed orangered;
+            background-image: url(1.jpg)
+            background-size: cover;
+        }
+
+        .background-shorthand {
+            border: 15px dashed orangered;
+            background: url(1.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        .sp {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>this property is a shorthand for the following css properties:</p>
+
+    <ul>
+        <li> background-attachment</li>
+        <li> background-clip</li>
+        <li> background-color</li>
+        <li> background-image</li>
+        <li> background-origin</li>
+        <li> background-position</li>
+        <li> background-repeat</li>
+        <li> background-size</li>
+    </ul>
+    <div class="box background-attachment"></div>
+    <div class="box background-clip sp">
+        <p>somthing</p>
+    </div>
+    <div class="box background-origin sp">
+        <p>somthing</p>
+    </div>
+    <div class="box beckground-color"></div>
+    <div class="box background-image"></div>
+    <div class="box background-position"></div>
+    <div class="box background-repeat"></div>
+    <div class="box background-size"></div>
+    <div class="box background-shorthand"></div>
+    <div></div>
+</body>
+</html>

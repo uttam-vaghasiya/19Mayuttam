@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .row {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        * {
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        .logo {
+            margin: 0 20px;
+        }
+
+        .phone img {
+            margin: 0px 10px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .search label {
+            vertical-align: middle;
+        }
+
+        .search input {
+            width: 95%;
+            font-size: 20px;
+            padding: 6px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+        }
+
+        .search {
+            margin-left: 10px;
+            border: 1px solid black;
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .wishlist li a img {
+            width: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="row">
+                <div class="logo">
+                    <img src="..//css.html/main_logo.svg" alt="">
+                </div>
+                <div class="phone">
+                    <img src="..//css.html/phone_number.svg" alt="">
+                </div>
+                <div class="search">
+                    <input type="search" name="search" id="search">
+                    <label for="search"><img src="./search.svg" alt=""></label>
+                </div>
+                <div class="main_menu">
+                    <ul>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Sign Up/Sign In</a></li>
+                        <li><a href="#"><img src="..//css.html/wishlist.webp" alt=""> Wishlist</a></li>
+                        <li><a href="#"><img src="..//css.html/cart.webp" alt=""> Cart</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="main-header"></div>
+    </header>
+</body>
+
+</html>
